@@ -14,7 +14,7 @@ const routes = [
         name: 'AllTasks',
         component: () => import('../views/AllTasks.vue')
     }
-]
+] 
 
 const router = new VueRouter({
     mode: 'history',
