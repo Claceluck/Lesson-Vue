@@ -2,6 +2,7 @@
     <div>
         <!--неизменная часть-->
         <div>
+            <p>Всего задач: {{tasks.length}}</p>
             <nav>
                 <router-link to="/add/task">
                     Создать задачу
@@ -20,8 +21,14 @@
 </template>
 
 <script>
+    import {allTasks} from "./tmp/taskArr";
     export default {
-        name: "App"
+        name: "App",
+        data: function () {
+            return {
+                tasks: allTasks
+            }
+        }
     }
 </script>
 
