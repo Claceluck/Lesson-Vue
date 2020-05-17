@@ -1,5 +1,5 @@
 <template>
-   <div v-on:click="obj.isDel = !obj.isDel">
+   <div>
        <p v-if="tasks.length">{{info}}</p>
        <p v-else>У вас нет текущих задач</p>
 

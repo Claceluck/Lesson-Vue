@@ -1,5 +1,5 @@
 <template>
-  <div v-on:click="this.obj.isDel = !this.obj.isDel">
+  <div v-on:click="obj.isDel = !obj.isDel">
       <h3>{{obj.title.toUpperCase()}} | До: {{obj.date}}</h3>
       <p>{{obj.description}}</p>
       <hr>
